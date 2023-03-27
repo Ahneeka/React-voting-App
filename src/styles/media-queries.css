@@ -1,0 +1,101 @@
+/* these style will be applied on devices that have a width of at least 768px */
+@media screen and (min-width: 768px){
+    .logo{
+    justify-content: flex-start;
+    }
+
+    .cards{
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1rem;
+        height: 100%;
+        padding: 0;
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .card{
+        /* width: 30rem; */
+        margin-bottom: 0;
+    }
+
+    .card-image{
+        width: 100%;
+        height: 26rem;
+    }
+
+    .vote-number-Obi,
+    .vote-number-Tinubu,
+    .vote-number-Atiku{
+        font-size: 3.5rem;
+    }
+
+    .vote-text{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .candidate-name{
+        font-size: 2rem;
+    }
+
+    .candidate-party{
+        font-size: 1.1rem;
+    }
+
+    .card-btn{
+        font-size: 2rem;
+    }
+}
+
+
+/* this device will be applied on devices that have a width of at least 1024px */
+@media screen and (min-width: 1024px) {
+    .card{
+        width: 70%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .card:hover{
+        transform: translateY(-1rem);
+    }
+
+    .card:hover .btn-Obi,
+    .card:hover .btn-Tinubu,
+    .card:hover .btn-Atiku{
+        font-size: 2.5rem;
+    }
+
+    .btn-obi:hover{
+        background-color: rgb(236, 191, 176);
+    }
+
+    .btn-obi:active{
+        background-color: rgb(207, 156, 140);
+    }
+
+    .btn-tinubu:hover{
+        background-color: rgb(191, 248, 248);
+    }
+
+    .btn-tinubu:active{
+        background-color: rgb(141, 201, 201);
+    }
+
+    .btn-atiku:hover{
+        background-color: rgb(236, 163, 178);
+    }
+
+    .btn-atiku:active{
+        background-color: rgb(178, 101, 117);
+    }
+
+    /* these style will be applied on devices thst have a width of at least 1400px  */
+
+    @media screen and (min-width: 1400px){
+        .cards{
+            width: 100%;
+            max-width: 1200px;
+        }
+    }
+}

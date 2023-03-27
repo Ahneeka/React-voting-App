@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#app{
+    min-height: 100vh;
+}
+
+
+#app{
+    position: relative;
+    background: rgb(12,11,49, 0.568);
+    /* overflow-y: scroll; */
+}
+
+.app-overlay {
+    position: absolute; 
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../public/images/nigerian\ flag.jpeg) no-repeat center center;
+    background-size: cover;
+    left: 0;
+    z-index: -1;
+}
+
+header{
+    background-color: rgb(12,11,49);
+    padding: 1rem 2rem;
+}
+
+.logo{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1{
+    font-size: 3rem;
+}
+
+.logo img{
+    margin-right: 1rem;
+    width: 4rem;
+}
+
+/* main */
+main {
+    min-height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.cards{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.card{
+    /* width: 25rem; */
+    border: 2px solid rgb(32, 32, 32);
+    overflow: hidden;
+    box-shadow: 15px 25px 6px rgba(100, 400, 20, 0.2);
+    cursor: pointer;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-image{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.card-info{
+    display: flex;
+    background-color: white;
+    color: black;
+    padding: 2rem 1.5rem;
+    gap: 20px;
+    flex: 1;
+}
+
+.candidate-votes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+}
+
+.vote-number-Obi,
+.vote-number-Tinubu,
+.vote-number-Atiku{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.vote-text{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.line{
+    width: 0.1rem;
+    background-color: black;
+    
+}
+
+.candidate-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.candidate-name{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.candidate-party{
+    font-size: 1rem !important;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.candidate-party .image{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.card-btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem 0;
+    color: white;
+    cursor: pointer;
+    border-top: 2px solid black;
+}
+
+.btn-Obi,
+.btn-Tinubu,
+.btn-Atiku{
+    transition: all 0.5s ease;
+}
+
+.btn-obi{
+    background-color: darksalmon;
+}
+
+.btn-tinubu{
+    background-color: aqua;
+    color: black;
+}
+
+.btn-atiku{
+    background-color: crimson;
+}
