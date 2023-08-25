@@ -10,7 +10,7 @@ function App() {
   const handleClick = (index) => {
     console.log("Clicked on ", index);
     setData((prev)=>{
-
+  
     });
   };
 
